@@ -18,12 +18,54 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        title: "my text",
+      }),
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
+      }),
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: 'Next Text',
+        short_name: 'Editor',
+        description: 'A text editor app',
+        background_color: '#ffffff',
+        theme_color: '#000000',
+        start_url: '/',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'), // Provide your app icon
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('icons'),
+          },
+        ],
+      }),
+
     ],
 
     module: {
       rules: [
-        
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
+            },
+          },
+        },
       ],
     },
   };
