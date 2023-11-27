@@ -1,0 +1,10 @@
+{
+    "icons": [
+        {
+            "'src: "./assets/icons/icon_512x512.png",
+        "size": "512x512",
+        "type": "image/png"
+        },
+        {
+    ]
+}
