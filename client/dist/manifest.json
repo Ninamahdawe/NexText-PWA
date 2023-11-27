@@ -1,10 +1,21 @@
 {
     "icons": [
         {
-            "'src: "./assets/icons/icon_512x512.png",
+        "src": "./assets/icons/icon_512x512.png",
         "size": "512x512",
         "type": "image/png"
         },
         {
+            "src": "./assets/icons/icon_384x384.png",
+            "size": "384x384",
+            "type": "image/png"
+        },
+        {
+            
+        }
+
+            
+
+
     ]
 }
