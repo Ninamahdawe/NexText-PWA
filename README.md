@@ -67,6 +67,7 @@ https://github.com/Ninamahdawe
 ## Screenshot
 
 ![Alt text](immense-atoll-35130-70ccb3ac7ff5.herokuapp.com_.png)
+![Alt text](screenshot/app.png)
 
 ## Deployed Application
 
