@@ -12,6 +12,7 @@ A Progressive Web App (PWA) text editor for seamless text creation, saving, and 
 - [Contributing](#contributing)
 - [License](#license)
 - [Questions](#questions)
+- [Screenshot](#screenshot) -[Deployed Application ](#deployedapplication)
 
 ## Features
 
@@ -63,4 +64,10 @@ for any questions please feel free to reachout to me via email at Ninamahdawe11@
 
 https://github.com/Ninamahdawe
 
-Screenshot ![![Alt text](immense-atoll-35130-70ccb3ac7ff5.herokuapp.com_.png)]
+## Screenshot
+
+![Alt text](immense-atoll-35130-70ccb3ac7ff5.herokuapp.com_.png)
+
+## Deployed Application
+
+https://immense-atoll-35130-70ccb3ac7ff5.herokuapp.com/
