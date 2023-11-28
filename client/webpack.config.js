@@ -20,7 +20,7 @@ module.exports = () => {
 
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './index.html',
         title: "my text",
       }),
       new InjectManifest({
@@ -32,10 +32,11 @@ module.exports = () => {
         inject: true,
         name: 'Next Text',
         short_name: 'Editor',
-        description: 'A text editor app',
+        description: "A text editor app",
         background_color: '#ffffff',
         theme_color: '#000000',
-        start_url: '/',
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve('src/images/logo.png'), // Provide your app icon
