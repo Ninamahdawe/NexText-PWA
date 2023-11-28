@@ -41,7 +41,7 @@ module.exports = () => {
           {
             src: path.resolve('src/images/logo.png'), // Provide your app icon
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('icons'),
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
@@ -51,7 +51,7 @@ module.exports = () => {
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
         {
@@ -62,8 +62,7 @@ module.exports = () => {
             options: {
               presets: ['@babel/preset-env'],
               plugins: [
-                "@babel/plugin-proposal-object-rest-spread",
-                "@babel/transform-runtime",
+                "@babel/plugin-proposal-object-rest-spread", "@babel/transform-runtime"
               ],
             },
           },
